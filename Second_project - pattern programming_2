@@ -35,4 +35,4 @@ for(int i=6; i>=0; i--) {
             cout << char('A' + l);
         }
         cout << endl;
-    }
+        }}}
