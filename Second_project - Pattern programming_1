@@ -4,10 +4,11 @@ using namespace std;
 
 int main() {
      int num;
-      int *y= &num;
+      int *y= &num;// number of characters in each row
     cout<<"enter a number of rows:";
     cin>>num;
     if(num>0){
+    // first half of the pattern
    for (int i = *y; i >=1; i--) {
       for (int j = i; j < 8; j++) {
          cout << " ";
@@ -20,6 +21,7 @@ int main() {
       }
       cout << endl;
    }
+   // second half of the pattern
    for (int i = 2; i <= *y; i++) {
       for (int j = i; j < 8; j++) {
          cout << " ";
@@ -33,6 +35,7 @@ int main() {
       cout << endl;
    }
     }
+    // if the value entered is a negative number or a character
     else{
         cout<<"    ";
     }
