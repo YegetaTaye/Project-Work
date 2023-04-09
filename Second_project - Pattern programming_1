@@ -5,8 +5,9 @@ int main() {
      int num;
     cout<<"enter a number of rows:";
     cin>>num;
+    int *y= &num;
     if(num>0){
-   for (int i = num; i >=1; i--) {
+   for (int i = *y; i >=1; i--) {
       for (int j = i; j < 8; j++) {
          cout << " ";
       }
