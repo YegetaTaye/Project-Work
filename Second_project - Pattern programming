@@ -13,3 +13,7 @@ int main() {
       for (int k = i; k >= 1; k--) {
          cout << char(k + 64);
       }
+      for(int l = 2; 1 <= i; l++){
+          cout<<char(l + 64);
+      }
+      cout<<endl;
