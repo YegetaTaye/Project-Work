@@ -35,5 +35,5 @@ int main() {
       for (int l = 2; l <= i; l++) {
          cout << char(l + 64);
       }
-      cout << endl;
+      cout<<endl;
    }
