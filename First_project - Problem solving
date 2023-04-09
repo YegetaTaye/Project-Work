@@ -8,6 +8,7 @@ int main(){
 
 for (hypotenuse = 1; hypotenuse <= 100; hypotenuse++){
 for (s1 = 1; s1 <= hypotenuse; s1++) {
+for (s2 = 2; s2 <= hypotenuse; s1++) {
 if (s1*s1 + s2*s2 == hypotenuse*hypotenuse) {
     cout << s1 << "  " << s2 << "  " << hypotenuse << endl;
     }
