@@ -6,7 +6,16 @@ int main(){
  cout << "Pythagorean Triples:" << endl;
 
 for (hypotenuse = 1; hypotenuse <= 100; hypotenuse++){
-for (s1 = 1; side1 <= hypotenuse; s1++) {
+for (side1 = 1; side1 <= hypotenuse; s1++) {
+if (s1*s1 + s2*s2 == hypotenuse*hypotenuse) {
+    cout << s1 << "  " << s2 << "  " << hypotenuse << endl;
+    }
+     }
+       }
+         }
+    return 0;
+}
+
     
 
 
