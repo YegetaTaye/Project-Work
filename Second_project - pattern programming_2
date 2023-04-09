@@ -3,8 +3,8 @@ using namespace std;
 
 int main() {
     int num=9;
-    
-     if(num>0){
+    int *nptr = & num;
+     if(*nptr>0){
      for(int i=0; i<9; i++) {
 
         for(int j=0; j<=i; j++) {
