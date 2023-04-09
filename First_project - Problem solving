@@ -6,10 +6,15 @@ int main(){
  int s1, s2, hypotenuse; 
  cout << "Pythagorean Triples:" << endl;
 int *y = &s1;
+// Loop over values of hypotenuse
 for (hypotenuse = 1; hypotenuse <= 100; hypotenuse++){
+// Loop over values of side1
 for (*y = 1; *y <= hypotenuse; s1++) {
+// Loop over values of side2
 for (s2 = 2; s2 <= hypotenuse; s2++) {
+// Check if triple satisfies Pythagoras theorem
 if (s1*s1 + s2*s2 == hypotenuse*hypotenuse) {
+// Display triple
     cout << s1 << "  " << s2 << "  " << hypotenuse << endl;
     }
      }
