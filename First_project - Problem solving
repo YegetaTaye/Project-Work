@@ -5,9 +5,9 @@ using namespace std;
 int main(){
  int s1, s2, hypotenuse; 
  cout << "Pythagorean Triples:" << endl;
-
+int *y = &s1;
 for (hypotenuse = 1; hypotenuse <= 100; hypotenuse++){
-for (s1 = 1; s1 <= hypotenuse; s1++) {
+for (*y = 1; *y <= hypotenuse; s1++) {
 for (s2 = 2; s2 <= hypotenuse; s2++) {
 if (s1*s1 + s2*s2 == hypotenuse*hypotenuse) {
     cout << s1 << "  " << s2 << "  " << hypotenuse << endl;
