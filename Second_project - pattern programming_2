@@ -7,7 +7,7 @@ int main() {
      if(*nptr>0){
      for(int i=0; i<9; i++) {
 
-        for(int j=0; j<=i; j++) {
+        for(int j=0; j<=i; j++)/*upper left triangle*/ {
               if(j==8){
                 cout<<'J';
             continue;}
