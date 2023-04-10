@@ -36,4 +36,6 @@ for(int i=7; i>=0; i--) {
             cout << char('A' + l);
         }
         cout << endl;
-        }}}
+        }}
+        return 0;
+        }
