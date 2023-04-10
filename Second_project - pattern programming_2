@@ -12,8 +12,8 @@ int main() {
                 cout<<'J';
             continue;}
             cout << char('A' + j);
-
        }
+       // for loop for the spacing part
        for(int k=2*(10-i-2); k>=2; k--) {
             cout << " ";
        }
@@ -28,6 +28,7 @@ for(int i=7; i>=0; i--) {
         for(int j=0; j<=i; j++) {
             cout << char('A' + j);
         }
+        // for loop for the spacing part
         for(int k=2*(8-i); k>=2; k--) {
             cout << " ";
         }
