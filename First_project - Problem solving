@@ -1,26 +1,22 @@
 
-#include<iostream>
+ #include <iostream>
 using namespace std;
 
-int main(){
- int s1, s2, hypotenuse; 
- cout << "Pythagorean Triples:" << endl;
-int *y = &s1; // a pointer variable, with the name y, that stores the adress of s1
-// Loop over values of hypotenuse
-for (hypotenuse = 1; hypotenuse <= 100; hypotenuse++){
-// Loop over values of side 1
-for (*y = 1; *y <= hypotenuse; s1++) {
-// Loop over values of side 2
-for (s2 = 2; s2 <= hypotenuse; s2++) {
-// Check if triple satisfies Pythagoras theorem
-if (s1*s1 + s2*s2 == hypotenuse*hypotenuse) {
-// Display triple
-    cout << s1 << "  " << s2 << "  " << hypotenuse << endl;
-    }
-     }
-       }
+int main() {
+   int max;
+   cout << "Enter the maximum value for a side: ";
+   cin >> max;
+
+   cout << "Pythagorean Triples:" << endl;
+   for (int a = 1; a <= max; a++) {
+      for (int b = a; b <= max; b++) {
+         for (int c = b; c <= max; c++) {
+            if ((a * a) + (b * b) == (c * c)) {
+               cout << a << ", " << b << ", " << c << endl;
+            }
          }
-         
-    return 0;
-    }
+      }
+   }
+   return 0;
+}
 
